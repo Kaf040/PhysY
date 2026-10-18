@@ -27,9 +27,39 @@
                     "priority": 0
                 },
                 {
-                    "name": "New action",
-                    "type": "Button",
+                    "name": "Mouse Scroll",
+                    "type": "Value",
                     "id": "c225700f-6949-4bed-8d2c-c4b6750d9d96",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "Left Mouse Button",
+                    "type": "Button",
+                    "id": "e6e63ad1-5798-456d-b51e-bc62f6d1d818",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Right Mouse Button",
+                    "type": "Button",
+                    "id": "82b6da40-4855-4fed-8778-faec174bb738",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Middle Mouse Button",
+                    "type": "Button",
+                    "id": "95f1bf56-120e-4cb8-8494-9598d75cd0cb",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -94,6 +124,61 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "adba8597-4775-4b47-85f0-e1d7393b8af7",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "4ec631fd-94a7-4a22-ab5b-42d5f4aa55a6",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0d563638-3767-4cbd-9eeb-2a22dd5d07d5",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "9a79186e-8054-476a-bf97-d19926af42a9",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "4b3705af-a7f6-4826-b092-675dbc05f9ea",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "3f0809d2-8393-4d6d-8d1a-5ce0b0f4dc9e",
                     "path": "<Mouse>/position",
@@ -107,11 +192,44 @@
                 {
                     "name": "",
                     "id": "b6f88767-66f8-4e0a-b7f1-f7da29a8713f",
-                    "path": "",
+                    "path": "<Mouse>/scroll",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Mouse Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8dc389f0-6ef5-4368-889b-403245a04c0e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Mouse Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77603f49-337b-4f04-8ec2-dd2be6aa0d59",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Mouse Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dda0082e-8fd7-4844-909e-642ad95e7947",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Middle Mouse Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
