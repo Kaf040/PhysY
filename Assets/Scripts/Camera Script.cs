@@ -7,7 +7,7 @@ public class CameraScript : MonoBehaviour
     Camera selfCamera;
     [Header("Controls")]
     InputAction moveAction, scrollAction;
-    [SerializeField] float moveSpeed = 1f;
+    [SerializeField] float moveSpeed = 1.0f;
     [SerializeField] float scrollSpeed = 1.0f;
     [Header("Grid")]
     [SerializeField] int targetVerticalBarsOnScreen = 30;
@@ -37,6 +37,6 @@ public class CameraScript : MonoBehaviour
         transform.Translate(moveValue * moveSpeed * Time.deltaTime);
         float currentZoom = selfCamera.orthographicSize;
         Vector2 scrollValue = scrollAction.ReadValue<Vector2>();
-        selfCamera.orthographicSize = currentZoom + scrollValue[0] * scrollSpeed;
+        selfCamera.orthographicSize = currentZoom - scrollValue[1] * scrollSpeed;
     }
 }
