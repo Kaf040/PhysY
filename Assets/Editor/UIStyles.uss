@@ -1,0 +1,24 @@
+
+.item-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(55, 55, 55);
+    
+    transition-property: scale, border-color, background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+
+.item-card:hover {
+    scale: 1.08; 
+    border-color: rgb(255, 215, 0); 
+    background-color: rgb(75, 75, 75); 
+}
+
+.item-card:active {
+    scale: 0.95; 
+    border-color: rgb(255, 180, 0);
+}

@@ -48,7 +48,6 @@ public class ItemSpawnerDrag : MonoBehaviour
         }
     }
 
-    // Пользователь нажал на иконку
     private void OnPointerDown(PointerDownEvent evt)
     {
         if (evt.button != 0) return;
